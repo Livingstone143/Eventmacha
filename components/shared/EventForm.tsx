@@ -325,7 +325,7 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
           className="button col-span-2 w-full"
         >
           {form.formState.isSubmitting ? (
-            'Submitting...'
+            'createing...'
           ): `${type} Event `}</Button>
       </form>
     </Form>
