@@ -28,7 +28,7 @@ const EventSchema = new Schema<IEvent>({
   isFree: { type: Boolean, default: false },
   url: { type: String },
   category: { type: Schema.Types.ObjectId, ref: 'Category' },
-  
+  organizer: { type: Schema.Types.ObjectId, ref: 'User' },
 });
 
 const Event: Model<IEvent> = models.Event || model<IEvent>('Event', EventSchema);
